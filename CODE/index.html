@@ -88,8 +88,8 @@
             </tr>
         </tfoot>
     </table>
-    -->
     
+    <fieldset>
     <form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank">
         <input id="assunto" name="assunto" type="text">
         <input id="senha" name="senha" type="password"> 
@@ -98,7 +98,23 @@
         <input id="dataNascimento" name="dataNascimento" type="date">
         <input id="corFavorita" name="corFavorita" type="color">
         <br>
+    </fieldset>
+    <fieldset>
+        <select name="motivo" id="motivo">
+            <option value="sem_motivo">Não selecionado</option>
+            <option value="pq_sim">Porque sim</option>
+            <option selected value="elogio">Aula legal</option>
+            <option value="reclamacao">Aula péssima</option>
+        </select>
         <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <button type="submit">Enviar</button>
+    </fieldset>
+    </form>
+    -->
+
+    <form action="https://pruu.herokuapp.com/dump/test" method="post">
+        <label for="nome">Nome</label>
+        <input type="hidden" name="nome" value="Victor">
         <button type="submit">Enviar</button>
     </form>
 </body>
