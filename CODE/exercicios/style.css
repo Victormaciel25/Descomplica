@@ -1,0 +1,15 @@
+div{
+    background-color: yellow;
+}
+
+div > h1{
+    text-align: center;
+}
+
+.corpodotexto{
+    color: rgb(0, 140, 255);
+}
+
+.corpodotexto2{
+    color: rgb(245, 28, 28);
+}

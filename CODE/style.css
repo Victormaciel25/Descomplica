@@ -17,3 +17,21 @@
 .list{
     list-style: square;
 }
+
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.div{
+    width: 100px;
+    height: 100px;
+    background: rgb(240, 138, 6);
+}
+
+#div{
+    width: 100px;
+    height: 100prgb(145, 1, 241);
+    background: rgb(135, 6, 240);
+}
