@@ -88,7 +88,7 @@
             </tr>
         </tfoot>
     </table>
-    -->
+    
     
     <fieldset>
     <form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank">
@@ -118,6 +118,59 @@
         <label for="nome">Nome</label>
         <input type="hidden" name="nome" value="Victor">
         <button type="submit">Enviar</button>
+    </form>
+    -->
+
+    <form action="">
+        <fieldset>
+            <div>
+                <label for="pais">País*</label> <br>
+                <select name="pais" id="pais">
+                    <option value="">Selecione...</option> 
+                    <option seleted value="BR">Brasil</option>
+                </select>
+            </div>
+            <div>
+                <label for="cep">CEP*</label> <br>
+                <input name="cep" id="cep" type="text" value="60335-010" maxlength="10">
+            </div>
+            <div>
+                <label for="endereco">Endereço*</label> <br>
+                <input name="endereco" id="endereco" type="text" value="teste">
+            </div>
+            <div>
+                <label for="numero">Número*</label> <br>
+                <input name="numero" id="numero" type="number" value="112">
+            </div>
+            <div>
+                <label for="complemento">Complemento</label> <br>
+                <input name="complemento" id="complemento" type="text">
+            </div>
+            <div>
+                <label for="estado">UF*</label> <br>
+                <select name="estado" id="estado">
+                    <option value="">Selecione...</option> 
+                <option selected value="CE">Ceará</option> 
+                </select>
+            </div>
+            <div>
+                <label for="cidade">Cidade*</label> <br>
+                <select name="cidade" id="cidade">
+                <option value="">Selecione...</option> 
+                <option value="DQ">Duque de Caxias</option> 
+                </select>
+            </div>
+            <div>
+                <label for="bairro">Bairro*</label> <br>
+                <input name="bairro" id="bairro" type="text">
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset>
+            Dados profissionais
+        </fieldset>
+        <button type="submit">Atualizar dados</button>
+       
     </form>
 </body>
 </html>
