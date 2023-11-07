@@ -1,15 +1,33 @@
-div{
-    background-color: yellow;
+.list{
+    list-style: none;
 }
 
-div > h1{
-    text-align: center;
+.app{
+    display: flex;
+    flex-direction: column;
+    background-color:turquoise;
+    height: 100vh;
 }
 
-.corpodotexto{
-    color: rgb(0, 140, 255);
+.content{
+    background-color: tomato;
+    flex-grow: 1;
 }
 
-.corpodotexto2{
-    color: rgb(245, 28, 28);
+.navbar{
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+}
+
+.menu_button{
+    background-color: greenyellow;
+}
+
+.search_button{
+    background-color: red;
+}
+
+.logo{
+    background-color: white;
 }
