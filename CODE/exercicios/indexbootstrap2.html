@@ -142,17 +142,34 @@
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
+                      <form action="mailto:to=test@test.com">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Payment details</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        ...
+                          <div class="mb-2 row">
+                            <label for="holder_name" class="form-label col-4">Holder</label>
+                            <input name="holder_name" type="text" class="form-control col">
+                          </div>
+                          <div class="mb-2 row">
+                            <label for="card_number" class="form-label col-4">Card number</label>
+                            <input name="card_number" type="text" class="form-control col">
+                          </div>
+                          <div class="mb-2 row">
+                            <label for="expiration_date" class="form-label col-4">Expiration date</label>
+                            <input name="expiration_date" type="text" class="form-control col">
+                          </div> 
+                          <div class="mb-2 row">
+                            <label for="cvv" class="form-label col-4">CVV</label>
+                            <input name="cvv" type="text"  class="form-control col">
+                          </div>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
                       </div>
+                    </form>
                     </div>
                   </div>
                 </div>
