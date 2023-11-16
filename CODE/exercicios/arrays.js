@@ -45,3 +45,25 @@ console.log(arr1);
 arr1.pop(); // Pop remove o ultimo elemento do array
 
 console.log(arr1);
+
+var arr2 = [1,2,3,4,5,6,7];
+
+arr2.splice(2,3)
+
+console.log(arr2)
+
+var nomes = ["Maria", "Joao", "Lucas", "Pedro"];
+var novos = nomes.splice(1,2,"Luiz", "Alberto");
+console.log(nomes);
+
+var pais = ["Brasil", "Argentina", "Colombia"]
+
+pais.unshift("Uruguai");
+console.log(pais);
+
+var nomes2 = ["Guilherme" , "Samuel", "Davi", "Manuel", "João"]
+nomes2.push("Monica");
+nomes2.pop();
+console.log("Posição do Samuel é: " + nomes2.indexOf("Samuel"));
+nomes2.splice(3,1,"Emanuel");
+console.log(nomes2);
