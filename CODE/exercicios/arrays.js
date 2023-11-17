@@ -61,9 +61,30 @@ var pais = ["Brasil", "Argentina", "Colombia"]
 pais.unshift("Uruguai");
 console.log(pais);
 
-var nomes2 = ["Guilherme" , "Samuel", "Davi", "Manuel", "João"]
+var nomes2 = ["Guilherme" , "Samuel", "Davi", "Manuel", "João"];
 nomes2.push("Monica");
 nomes2.pop();
 console.log("Posição do Samuel é: " + nomes2.indexOf("Samuel"));
 nomes2.splice(3,1,"Emanuel");
 console.log(nomes2);
+
+var pessoa = ["Eduardo", "Joana", "Wallace", "Rosana"];
+var gerente = ["Davi", "Manuela"];
+var pessoas1 = pessoa.slice(1,3); // Slice seleciona sem retirar do array
+
+console.log(pessoa);
+console.log(pessoas1);
+
+var empresa = pessoa.concat(gerente)
+
+console.log(empresa);
+
+var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+var tri1 = meses.slice(0,3); //Janeiro, fevereiro, março
+var tri2 = meses.slice(3,6); // Abril, maio, junho
+var tri3 = meses.slice(6,9); //Julho, agosto, setembro
+var tri4 = meses.slice(9,12); //Outubro, novembro, dezembro
+console.log(tri1);
+console.log(tri2);
+console.log(tri3);
+console.log(tri4);
